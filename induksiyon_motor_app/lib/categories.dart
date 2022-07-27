@@ -95,24 +95,6 @@ class _CategoriesPageState extends State<CategoriesPage> {
                         textAlign: TextAlign.center),
                   )),
               const SizedBox(height: 30),
-              TextButton(
-                  style: TextButton.styleFrom(
-                    textStyle: const TextStyle(fontSize: 20),
-                    padding: const EdgeInsets.all(16.0),
-                    primary: Colors.white,
-                  ),
-                  onPressed: () {},
-                  child: const Flexible(
-                    child: Text("Click the button to check the paramet",
-                        style: TextStyle(
-                            color: Color(0xffffffff),
-                            fontWeight: FontWeight.w300,
-                            fontFamily: "Inter",
-                            fontStyle: FontStyle.normal,
-                            fontSize: 36.0),
-                        textAlign: TextAlign.center),
-                  )),
-              const SizedBox(height: 30),
               ClipRRect(
                   borderRadius: BorderRadius.circular(30),
                   child: Container(
@@ -144,7 +126,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                       ],
                     ),
                   )),
-              const SizedBox(height: 60),
+              const SizedBox(height: 20),
             ],
           ),
         ),
