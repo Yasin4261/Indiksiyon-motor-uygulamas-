@@ -26,6 +26,7 @@ class _MotorParametersState extends State<MotorParameters> {
                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
                 child: TextField(
                     controller: null,
+                    keyboardType: TextInputType.number,
                     maxLines: 1,
                     decoration: InputDecoration(
                         enabledBorder: OutlineInputBorder(
@@ -41,6 +42,7 @@ class _MotorParametersState extends State<MotorParameters> {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
                 child: TextField(
+                  keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
@@ -56,6 +58,7 @@ class _MotorParametersState extends State<MotorParameters> {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
                 child: TextField(
+                  keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
@@ -71,6 +74,7 @@ class _MotorParametersState extends State<MotorParameters> {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
                 child: TextField(
+                  keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
@@ -86,6 +90,7 @@ class _MotorParametersState extends State<MotorParameters> {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
                 child: TextField(
+                  keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
@@ -101,6 +106,7 @@ class _MotorParametersState extends State<MotorParameters> {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
                 child: TextField(
+                  keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
@@ -116,6 +122,7 @@ class _MotorParametersState extends State<MotorParameters> {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
                 child: TextField(
+                  keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
@@ -128,13 +135,10 @@ class _MotorParametersState extends State<MotorParameters> {
                       helperStyle: TextStyle(color: Colors.white)),
                 ),
               ),
-              ElevatedButton(
+              FloatingActionButton(
                 onPressed: null,
-                child: const Text('Elevated'),
-                /*style: ButtonStyle(
-                  foregroundColor:
-                      MaterialStateProperty.all(Colors.greenAccent),
-                ),*/
+                backgroundColor: Color(0xff19b4f8),
+                child: const Icon(Icons.check),
               ),
             ],
           ),
