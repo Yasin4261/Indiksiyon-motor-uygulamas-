@@ -1,4 +1,8 @@
 import "package:flutter/material.dart";
+import "motor_parameters.dart";
+import "specific_magneting_electric_loading_parameters.dart";
+import 'stator_parameters.dart';
+import 'rotor_parameters.dart';
 
 class CategoriesPage extends StatefulWidget {
   const CategoriesPage({Key? key}) : super(key: key);
@@ -28,7 +32,13 @@ class _CategoriesPageState extends State<CategoriesPage> {
                     padding: const EdgeInsets.all(16.0),
                     primary: Colors.white,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const MotorParameters()),
+                    );
+                  },
                   child: const Flexible(
                     child: Text("Motor Parameters",
                         style: TextStyle(
@@ -46,7 +56,13 @@ class _CategoriesPageState extends State<CategoriesPage> {
                     padding: const EdgeInsets.all(16.0),
                     primary: Colors.white,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const StatorParameters()),
+                    );
+                  },
                   child: const Flexible(
                     child: Text("Stator Parameters",
                         style: TextStyle(
@@ -64,7 +80,13 @@ class _CategoriesPageState extends State<CategoriesPage> {
                     padding: const EdgeInsets.all(16.0),
                     primary: Colors.white,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const RotorParameters()),
+                    );
+                  },
                   child: const Flexible(
                     child: Text("Rotor Parameters",
                         style: TextStyle(
@@ -82,7 +104,14 @@ class _CategoriesPageState extends State<CategoriesPage> {
                     padding: const EdgeInsets.all(16.0),
                     primary: Colors.white,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              const MagnetingElectricLoadingParameters()),
+                    );
+                  },
                   child: const Flexible(
                     child: Text(
                         "Specific Magnetic and Electric Loading Parameters",
@@ -97,14 +126,14 @@ class _CategoriesPageState extends State<CategoriesPage> {
               const SizedBox(height: 30),
               ClipRRect(
                   borderRadius: BorderRadius.circular(30),
-                  child: Container(
+                  child: SizedBox(
                     width: MediaQuery.of(context).size.width,
                     child: Stack(
                       children: <Widget>[
                         Positioned.fill(
                           child: Container(
                             decoration: const BoxDecoration(
-                              color: const Color(0xff19b4f8),
+                              color: Color(0xff19b4f8),
                             ),
                           ),
                         ),
@@ -119,8 +148,8 @@ class _CategoriesPageState extends State<CategoriesPage> {
                                 fontFamily: "Inter",
                               )),
                           onPressed: () {},
-                          child: Center(
-                            child: const Text('Analyze'),
+                          child: const Center(
+                            child: Text('Analyze'),
                           ),
                         ),
                       ],
