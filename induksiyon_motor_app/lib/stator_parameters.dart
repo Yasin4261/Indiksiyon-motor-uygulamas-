@@ -66,11 +66,14 @@ class StatorParameters extends StatelessWidget {
                       helperStyle: TextStyle(color: Colors.white)),
                 ),
               ),
-              FloatingActionButton(
-                onPressed: null,
-                backgroundColor: Color(0xff19b4f8),
-                child: const Icon(Icons.check),
-              ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                child: FloatingActionButton(
+                  onPressed: null,
+                  backgroundColor: Color(0xff19b4f8),
+                  child: Icon(Icons.check),
+                ),
+              )
             ],
           ),
         ),
