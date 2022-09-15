@@ -1,8 +1,9 @@
 import "package:flutter/material.dart";
-import "motor_parameters.dart";
-import "specific_magneting_electric_loading_parameters.dart";
-import 'stator_parameters.dart';
-import 'rotor_parameters.dart';
+import '../../motor_parameters.dart';
+import '../../specific_magneting_electric_loading_parameters.dart';
+import '../../stator_parameters.dart';
+import '../../rotor_parameters.dart';
+import "package:induksiyon_motor_app/constants.dart";
 
 class CategoriesPage extends StatefulWidget {
   const CategoriesPage({Key? key}) : super(key: key);
@@ -15,12 +16,12 @@ class _CategoriesPageState extends State<CategoriesPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff2916d9),
+      backgroundColor: backGraundColor,
       appBar: AppBar(
-        shadowColor: Colors.black87,
+        shadowColor: shadowColor,
         centerTitle: true,
         title: const Text("Data Inputs"),
-        backgroundColor: const Color(0xff2916d9),
+        backgroundColor: backGraundColor,
       ),
       body: SingleChildScrollView(
         child: Center(
