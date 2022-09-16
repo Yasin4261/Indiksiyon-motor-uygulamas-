@@ -16,12 +16,12 @@ class _CategoriesPageState extends State<CategoriesPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: backGraundColor,
+      backgroundColor: Constants.backGraundColor,
       appBar: AppBar(
-        shadowColor: shadowColor,
+        shadowColor: Constants.shadowColor,
         centerTitle: true,
         title: const Text("Data Inputs"),
-        backgroundColor: backGraundColor,
+        backgroundColor: Constants.backGraundColor,
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -43,19 +43,20 @@ class _CategoriesPageState extends State<CategoriesPage> {
                   child: const Flexible(
                     child: Text("Motor Parameters",
                         style: TextStyle(
-                            color: Color(0xffffffff),
-                            fontWeight: FontWeight.w300,
-                            fontFamily: "Inter",
-                            fontStyle: FontStyle.normal,
-                            fontSize: 36.0),
+                            color: Constants.textColor,
+                            fontWeight: Constants.labelButtonFontWeight,
+                            fontFamily: Constants.labelButtonFontFamily,
+                            fontStyle: Constants.labelButtonFontStyle,
+                            fontSize: Constants.labelButtonFontSize),
                         textAlign: TextAlign.center),
                   )),
-              const SizedBox(height: 30),
+              const SizedBox(height: Constants.sizedBoxHeight),
               TextButton(
                   style: TextButton.styleFrom(
-                    textStyle: const TextStyle(fontSize: 20),
-                    padding: const EdgeInsets.all(16.0),
-                    primary: Colors.white,
+                    textStyle:
+                        const TextStyle(fontSize: Constants.textButtonFontSize),
+                    padding: const EdgeInsets.all(Constants.textButtonPadding),
+                    primary: Constants.textButtonPrimaryColor,
                   ),
                   onPressed: () {
                     Navigator.push(
@@ -67,20 +68,21 @@ class _CategoriesPageState extends State<CategoriesPage> {
                   child: const Flexible(
                     child: Text("Stator Parameters",
                         style: TextStyle(
-                            color: Color(0xffffffff),
-                            fontWeight: FontWeight.w300,
-                            fontFamily: "Inter",
-                            fontStyle: FontStyle.normal,
-                            fontSize: 36.0),
+                            color: Constants.textColor,
+                            fontWeight: Constants.labelButtonFontWeight,
+                            fontFamily: Constants.labelButtonFontFamily,
+                            fontStyle: Constants.labelButtonFontStyle,
+                            fontSize: Constants.labelButtonFontSize),
                         textAlign: TextAlign.center),
                   )),
-              const SizedBox(height: 30),
+              const SizedBox(height: Constants.sizedBoxHeight),
               TextButton(
                   style: TextButton.styleFrom(
-                    textStyle: const TextStyle(fontSize: 20),
-                    padding: const EdgeInsets.all(16.0),
-                    primary: Colors.white,
-                  ),
+                      textStyle: const TextStyle(
+                          fontSize: Constants.textButtonFontSize),
+                      padding:
+                          const EdgeInsets.all(Constants.textButtonPadding),
+                      primary: Constants.textButtonPrimaryColor),
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -91,14 +93,14 @@ class _CategoriesPageState extends State<CategoriesPage> {
                   child: const Flexible(
                     child: Text("Rotor Parameters",
                         style: TextStyle(
-                            color: Color(0xffffffff),
-                            fontWeight: FontWeight.w300,
-                            fontFamily: "Inter",
-                            fontStyle: FontStyle.normal,
-                            fontSize: 36.0),
+                            color: Constants.textColor,
+                            fontWeight: Constants.labelButtonFontWeight,
+                            fontFamily: Constants.labelButtonFontFamily,
+                            fontStyle: Constants.labelButtonFontStyle,
+                            fontSize: Constants.labelButtonFontSize),
                         textAlign: TextAlign.center),
                   )),
-              const SizedBox(height: 30),
+              const SizedBox(height: Constants.sizedBoxHeight),
               TextButton(
                   style: TextButton.styleFrom(
                     textStyle: const TextStyle(fontSize: 20),
@@ -117,14 +119,14 @@ class _CategoriesPageState extends State<CategoriesPage> {
                     child: Text(
                         "Specific Magnetic and Electric Loading Parameters",
                         style: TextStyle(
-                            color: Color(0xffffffff),
-                            fontWeight: FontWeight.w300,
-                            fontFamily: "Inter",
-                            fontStyle: FontStyle.normal,
-                            fontSize: 36.0),
+                            color: Constants.textColor,
+                            fontWeight: Constants.labelButtonFontWeight,
+                            fontFamily: Constants.labelButtonFontFamily,
+                            fontStyle: Constants.labelButtonFontStyle,
+                            fontSize: Constants.labelButtonFontSize),
                         textAlign: TextAlign.center),
                   )),
-              const SizedBox(height: 30),
+              const SizedBox(height: Constants.sizedBoxHeight),
               ClipRRect(
                   borderRadius: BorderRadius.circular(30),
                   child: SizedBox(

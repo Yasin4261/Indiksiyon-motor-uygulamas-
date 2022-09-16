@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'categories.dart';
+import 'wiev/pages/categories.dart';
 
 void main() {
   runApp(const MyApp());
